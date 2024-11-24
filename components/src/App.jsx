@@ -8,7 +8,7 @@ import styles from './post.module.css';
 function App() {
   const [posts, setPosts] = useState([
     {
-      username: 'SEI LA USER',
+      username: 'Slaman7500',
       userImage:
         'https://blog.bioparquedorio.com.br/wp-content/uploads/2020/11/Abu_filhote_macaco-prego-do-peito-amarelo-BioParquedoRio.jpg',
       postInfo: 'Gato aleatorio  :) ...',
@@ -18,7 +18,7 @@ function App() {
       liked: false,
     },
     {
-      username: 'SEI LA USER',
+      username: 'Gabriellimao7500',
       userImage:
         'https://blog.bioparquedorio.com.br/wp-content/uploads/2020/11/Abu_filhote_macaco-prego-do-peito-amarelo-BioParquedoRio.jpg',
       postInfo:
