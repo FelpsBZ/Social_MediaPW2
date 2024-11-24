@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import like from './assets/like.svg';
+import likeoff from './assets/likeoff.svg'
 import './App.css';
 
 import styles from './post.module.css';
@@ -14,24 +15,35 @@ function App() {
       postContent:
         'https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia19863/pelagem-e-dentes-idade-cavalos-artigos-cursos-cpt.jpg',
       likes: 9,
+      liked: false,
     },
     {
       username: 'SEI LA USER',
       userImage:
         'https://blog.bioparquedorio.com.br/wp-content/uploads/2020/11/Abu_filhote_macaco-prego-do-peito-amarelo-BioParquedoRio.jpg',
       postInfo:
-        'Meu nome é gabriel e eu tenho uma jeba do tamanho de uma tromba de elefante, sim isso é BIZARROOOOO!!!!!!',
+        'Meu nome é gabriel e eu sou o gabriel mas o gabriel sou eu o gabriel!!!!',
       postContent: '',
       likes: 9,
+      liked: false,
     },
   ]);
 
   function handleLike(index) {
-    const updatedPosts = posts.map((post, i) =>
-      i === index ? { ...post, likes: post.likes + 1 } : post
-    );
+    const updatedPosts = posts.map((post, i) => {
+      if (i === index) {
+        return {
+          ...post,
+          likes: post.liked ? post.likes - 1 : post.likes + 1,
+          liked: !post.liked,
+        };
+      }
+      return post;
+    });
+  
     setPosts(updatedPosts);
   }
+  
 
   return (
     <>
@@ -52,11 +64,11 @@ function App() {
           </div>
           <div className={styles.postContent}>
             {post.postContent && (
-              <img className={styles.image} src={post.postContent} alt="" />
+              <img className={styles.image} src={post.postContent} onDoubleClick={() => handleLike(index)} alt="" />
             )}
             <div
               className={styles.like} onClick={() => handleLike(index)}>
-              <img src={like} alt="like button" />
+              <img src={post.liked ? like : likeoff} alt="like button" />
               {post.likes}
             </div>
           </div>
