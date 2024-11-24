@@ -1,0 +1,74 @@
+.cardFriends {
+    width: 350px;
+    background-color: #1c1d1f;
+    border-radius: 14px;
+    padding: 30px;
+  }
+  
+  .titleFriends {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .friends {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .friend {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 0.8px solid #333;
+    justify-content: center;
+  }
+  
+  .imgUser {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .names {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  .names h2 {
+    font-size: 18px;
+    color: white;
+  }
+  
+  .names h3 {
+    font-size: 16px;
+    color: #ccc;
+  }
+
+  .removeButton {
+    background-color: #2290FF;
+    border: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+
+    transition: 0.4s ease-in-out;
+  }
+
+  .removeButton:hover {
+
+    background-color: #6db0ee;
+    color: black;
+    box-shadow: 0 0 10px 1px #6db0ee;
+    transition: 0.2s ease-in-out;
+
+    .removeIcon{ 
+        transition: 0.8s ease-in-out;
+        filter: invert(90);
+    }
+}

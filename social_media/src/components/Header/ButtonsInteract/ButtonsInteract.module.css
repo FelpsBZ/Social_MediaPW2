@@ -1,0 +1,32 @@
+.iconContainer {
+    display: flex;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.iconButton {
+    background-color: #404040;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.iconButton:hover {
+    background-color: #5a5e63;
+}
+
+.iconButton img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}

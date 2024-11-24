@@ -1,0 +1,93 @@
+.CreatePosts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 536px;
+    height: 170px;
+    border-radius: 14px;
+
+    background-color: #1c1d1f;
+    color: white;
+}
+
+.textPost { 
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+
+    .imgUser {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ffffff;
+    }
+
+    .inputPost {
+        background-color:   #4c5156;
+        border-radius: 50px;
+        width: 400px;
+        height: 40px;
+        border: none;
+        color: white;
+        padding-left: 15px;
+        font-size: 14px;
+        outline: none;
+    }
+
+}
+
+.postImage, .postClip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.postImage:hover, .postClip:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.postButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    background-color: #2290FF;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out; 
+}
+
+.postButton:hover {
+    background-color: #6db0ee;
+    color: black;
+    box-shadow: 0 0 10px 1px #6db0ee;
+    transition: 0.2s ease-in-out; 
+
+}
+
+.typePost {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+
+    border-top: 0.8px solid #333;
+}
