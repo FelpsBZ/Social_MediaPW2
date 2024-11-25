@@ -84,6 +84,8 @@ function Login({ Cad }) {
   }
 
   return (
+    <>
+    <div className={incorrect ? styles.error: styles.none}> Credenciais Incorretas!</div>
     <div className={styles.loginCard}>
       {Cadastro ? <h2>Register</h2> : <h2>Login</h2>}
       <form onSubmit={Cadastro ? handleRegister : handleLogin}>
@@ -136,6 +138,7 @@ function Login({ Cad }) {
         </div>
       </form>
     </div>
+    </>
   );
 }
 

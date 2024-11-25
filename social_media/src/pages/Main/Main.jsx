@@ -12,13 +12,13 @@ function Main() {
   const navigate = useNavigate();
   const [count, setCount] = useState(0)
 
-
+  /*
   useEffect(() => {
     if(!sessionStorage.getItem('user')){
       navigate('/')
     }
   }, []);
-
+  */
   return (
     <>
       <HEADER></HEADER>
