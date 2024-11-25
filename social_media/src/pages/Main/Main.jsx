@@ -5,9 +5,19 @@ import EDITUSER from '../../components/EditUser/EditUser';
 import CREATEPOSTS from '../../components/CreatePosts/CreatePosts';
 import FRIENDLIST from '../../components/FriendList/FriendList';
 import POST from '../../components/Posts/Post';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function Main() {
+  const navigate = useNavigate();
   const [count, setCount] = useState(0)
+
+
+  useEffect(() => {
+    if(!sessionStorage.getItem('user')){
+      navigate('/')
+    }
+  }, []);
 
   return (
     <>
