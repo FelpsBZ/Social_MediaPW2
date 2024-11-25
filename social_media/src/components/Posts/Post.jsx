@@ -26,6 +26,66 @@ function POST() {
       likes: 9,
       liked: false,
     },
+    {
+      username: 'Slaman7500',
+      userImage:
+        'https://blog.bioparquedorio.com.br/wp-content/uploads/2020/11/Abu_filhote_macaco-prego-do-peito-amarelo-BioParquedoRio.jpg',
+      postInfo: 'Gato aleatorio  :) ...',
+      postContent:
+        'https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia19863/pelagem-e-dentes-idade-cavalos-artigos-cursos-cpt.jpg',
+      likes: 8,
+      liked: false,
+    },
+    {
+      username: 'Gabriellimao7500',
+      userImage:
+        'https://blog.bioparquedorio.com.br/wp-content/uploads/2020/11/Abu_filhote_macaco-prego-do-peito-amarelo-BioParquedoRio.jpg',
+      postInfo:
+        'Meu nome é gabriel e eu sou o gabriel mas o gabriel sou eu o gabriel!!!!',
+      postContent: '',
+      likes: 9,
+      liked: false,
+    },
+    {
+      username: 'Slaman7500',
+      userImage:
+        'https://blog.bioparquedorio.com.br/wp-content/uploads/2020/11/Abu_filhote_macaco-prego-do-peito-amarelo-BioParquedoRio.jpg',
+      postInfo: 'Gato aleatorio  :) ...',
+      postContent:
+        'https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia19863/pelagem-e-dentes-idade-cavalos-artigos-cursos-cpt.jpg',
+      likes: 8,
+      liked: false,
+    },
+    {
+      username: 'Gabriellimao7500',
+      userImage:
+        'https://blog.bioparquedorio.com.br/wp-content/uploads/2020/11/Abu_filhote_macaco-prego-do-peito-amarelo-BioParquedoRio.jpg',
+      postInfo:
+        'Meu nome é gabriel e eu sou o gabriel mas o gabriel sou eu o gabriel!!!!',
+      postContent: '',
+      likes: 9,
+      liked: false,
+    },
+    {
+      username: 'Slaman7500',
+      userImage:
+        'https://blog.bioparquedorio.com.br/wp-content/uploads/2020/11/Abu_filhote_macaco-prego-do-peito-amarelo-BioParquedoRio.jpg',
+      postInfo: 'Gato aleatorio  :) ...',
+      postContent:
+        'https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia19863/pelagem-e-dentes-idade-cavalos-artigos-cursos-cpt.jpg',
+      likes: 8,
+      liked: false,
+    },
+    {
+      username: 'Gabriellimao7500',
+      userImage:
+        'https://blog.bioparquedorio.com.br/wp-content/uploads/2020/11/Abu_filhote_macaco-prego-do-peito-amarelo-BioParquedoRio.jpg',
+      postInfo:
+        'Meu nome é gabriel e eu sou o gabriel mas o gabriel sou eu o gabriel!!!!',
+      postContent: '',
+      likes: 9,
+      liked: false,
+    },
   ]);
 
   function handleLike(index) {
