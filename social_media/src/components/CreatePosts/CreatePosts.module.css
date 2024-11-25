@@ -3,12 +3,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 536px;
+    width: 530px;
     height: 170px;
     border-radius: 14px;
 
     background-color: #1c1d1f;
     color: white;
+    position: sticky;
+    right: calc(50vw - 250px);
+    top: -8vh;
 }
 
 .textPost { 
@@ -46,6 +49,7 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .postImage:hover, .postClip:hover {
@@ -76,7 +80,7 @@
 .postButton:hover {
     background-color: #6db0ee;
     color: black;
-    box-shadow: 0 0 10px 1px #6db0ee;
+    box-shadow: 0 0 6px 1px #6db0ee8e;
     transition: 0.2s ease-in-out; 
 
 }

@@ -5,22 +5,49 @@ import removeIcon from "./SVGS/removeFriend.svg"
 const friend = [
     {
         id: 1,
-        name: "Felipe Daniel",
         username: "Felps",
         img: "https://github.com/FelpsBZ.png",
     },
     {
         id: 2,
-        name: "Gabriel Lima", 
         username: "Lima",
         img: "https://github.com/gabriellimao7500.png",
     },
     {
         id: 3,
-        name: "Gabriel Ortiz",
         username: "Ortiz",
         img: "https://github.com/GMarsura.png",
-    }
+    },
+    {
+      id: 1,
+      username: "Felps",
+      img: "https://github.com/FelpsBZ.png",
+  },
+  {
+      id: 2,
+      username: "Lima",
+      img: "https://github.com/gabriellimao7500.png",
+  },
+  {
+      id: 3,
+      username: "Ortiz",
+      img: "https://github.com/GMarsura.png",
+  },
+  {
+    id: 1,
+    username: "Felps",
+    img: "https://github.com/FelpsBZ.png",
+},
+{
+    id: 2,
+    username: "Lima",
+    img: "https://github.com/gabriellimao7500.png",
+},
+{
+    id: 3,
+    username: "Ortiz",
+    img: "https://github.com/GMarsura.png",
+}
 ]
 
 function FRIENDLIST() {
@@ -33,12 +60,11 @@ function FRIENDLIST() {
             {friend.map((friend, index) => (
               <div key={index} className={styles.friend}>
                 
-                <img src={friend.img} alt={friend.name} className={styles.imgUser} />
-                
-                <div className={styles.names}>
-                  <h2>{friend.username}</h2>
-                  <h3>{friend.name}</h3>
+                <div className={styles.user}>
+                  <img src={friend.img} alt={friend.name} className={styles.imgUser} />
+                  <div className={styles.h2}>{friend.username}</div>
                 </div>
+
                 <button className={styles.removeButton} onClick={() => removeFriend(friend.id)}>
                     <img src={removeIcon} alt=""  className={styles.removeIcon}/>
                 </button>

@@ -1,10 +1,18 @@
 .cardFriends {
-    width: 350px;
+    position: fixed;
+    right: 0;
+    top: 10vh;
+    width: 340px;
+    height: 70vh;
+    margin-right: 20px;
     background-color: #1c1d1f;
     border-radius: 14px;
     padding: 30px;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
-  
+
   .titleFriends {
     color: white;
     font-size: 25px;
@@ -16,6 +24,7 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
+
   }
   
   .friend {
@@ -30,23 +39,19 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 10px;
   }
   
-  .names {
+  .user {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     width: 80%;
   }
   
-  .names h2 {
+  .user .h2 {
     font-size: 18px;
     color: white;
-  }
-  
-  .names h3 {
-    font-size: 16px;
-    color: #ccc;
+    font-weight: bold;
   }
 
   .removeButton {
@@ -57,18 +62,22 @@
     height: 35px;
     border-radius: 50px;
 
-    transition: 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s ease-in-out;
   }
 
   .removeButton:hover {
 
     background-color: #6db0ee;
     color: black;
-    box-shadow: 0 0 10px 1px #6db0ee;
+    box-shadow: 0 0 6px 1px #6db0ee70;
     transition: 0.2s ease-in-out;
 
     .removeIcon{ 
-        transition: 0.8s ease-in-out;
+        transition-duration: 0.2s ease-in-out;
         filter: invert(90);
     }
 }

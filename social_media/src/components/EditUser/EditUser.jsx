@@ -20,8 +20,7 @@ function EditUser() {
                 <div key={index} className={styles.ProfileUser}>
                     <img src={user.img} alt=""  className={styles.imgUser}/>
                     <div className={styles.names}>
-                        <h2>{user.username}</h2>
-                        <h3>{user.name}</h3>
+                        <div>{user.username}</div>
                     </div>
                 </div>
                                 

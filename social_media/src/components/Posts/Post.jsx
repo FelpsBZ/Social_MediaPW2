@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import like from './SVGS/like.svg';
-import likeoff from './SVGS/likeoff.svg'
+import like from '../../assets/like.svg';
+import likeoff from '../../assets/likeoff.svg'
 
 import styles from './Post.module.css';
 
@@ -13,7 +13,7 @@ function POST() {
       postInfo: 'Gato aleatorio  :) ...',
       postContent:
         'https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia19863/pelagem-e-dentes-idade-cavalos-artigos-cursos-cpt.jpg',
-      likes: 9,
+      likes: 8,
       liked: false,
     },
     {
