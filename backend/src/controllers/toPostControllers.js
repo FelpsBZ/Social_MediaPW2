@@ -1,23 +1,28 @@
-const tryUpload = require('../models/toPost')
-
-const uploadPost = async(req, res) =>{
-    try{
-    const {mimetype, buffer} = req.file;
-    const {id_user, descricao} = req.body;
-    const base64Imagem = buffer.toString('base64');
-
-    const result = await tryUpload.uploadPost(id_user, base64Imagem, descricao, mimetype)
+const tryUpload = require('../models/toPost');
 
 
-    }catch(error){
-        console.log(error)
+
+const uploadPost = async (req, res) => {
+    try {
+        
+   
+
+        
+        const { id_user, descricao , midia} = req.body;
+
+        
+
+        
+        const result = await tryUpload.uploadPost(id_user, descricao, midia);
+
+        return res.status(200).json({ message: 'Post concluído' });
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ error: 'Erro ao postar' });
     }
-}
+};
 
-const dowloadPosts = async(req, res) => {
-
-}
 
 module.exports = {
     uploadPost
-}
+};

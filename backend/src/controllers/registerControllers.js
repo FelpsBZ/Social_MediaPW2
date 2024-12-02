@@ -14,7 +14,7 @@ const registerUser = async (req, res) => {
         });
     } catch (err) {
         console.error('Erro ao cadastrar:', err);
-        return res.status(500).json({ error: 'Erro ao cadastrar.' });
+        return res.status(500).json({ error: 'Erro ao cadastrar' });
     }
 };
 

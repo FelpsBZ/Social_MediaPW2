@@ -2,12 +2,15 @@ import React from "react";
 import styles from "./EditUser.module.css";
 import editIcon from "./SVGS/edit-icon.svg";
 
+
+const user1 = JSON.parse(sessionStorage.getItem('user'))
+console.log(user1)
+
 const user = [
     {
-        id: 1,
-        name: "Felipe Daniel",
-        username: "Felps",
-        img: "https://github.com/FelpsBZ.png",
+        id: user1.id_user,
+        username: user1.nome,
+        img: user1.imagem
     }
 ]
 

@@ -1,14 +1,16 @@
-const connection = require('./connection/connection')
+const connection = require('./connection/connection');
 
-
-const uploadPost = async (id_user,base64imagem, descricao, mimetype) =>{
-    
-        const query = "INSERT INTO tb_posts (id_user, post_description, midia,type_midia, n_like) VALUES (?,?,?,?,?)"
-        await connection.query(query, [id_user, descricao, base64imagem,mimetype, 0])
-    
-    
-}
-
+const uploadPost = async (id_user, descricao, midia) => {
+    const query = "INSERT INTO tb_posts (id_user, post_description, midia, n_like) VALUES (?,?,?,?)";
+    try {
+        const [result] = await connection.query(query, [id_user, descricao,midia, 0]);
+        console.log('Post inserido com sucesso:', result);
+        return result;
+    } catch (error) {
+        console.error('Erro ao inserir post:', error);
+        throw error;
+    }
+};
 
 module.exports = {
     uploadPost
